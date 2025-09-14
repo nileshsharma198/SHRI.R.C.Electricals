@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@config "../tailwind.config.js";
+
+:root { --trans-dur: 250ms; }
+html { transition: background-color var(--trans-dur), color var(--trans-dur); }
+
+
