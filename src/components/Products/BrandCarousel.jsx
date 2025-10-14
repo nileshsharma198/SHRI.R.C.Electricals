@@ -1,10 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-
-<<<<<<< HEAD
-// Import logos
-=======
->>>>>>> 7551ef0 (First Commit)
 import BioCon from "../../assets/brands/BioCon.jpg";
 import LNT from "../../assets/brands/L&T.jpg";
 import Schneider from "../../assets/brands/Schneider.jpg";
@@ -76,11 +71,7 @@ function BrandCarousel() {
               <img
                 src={logo.src}
                 alt={logo.alt}
-<<<<<<< HEAD
-                className="h-40 w-auto object-contain"
-=======
                 className="h-40 w-auto object-contain rounded-lg"
->>>>>>> 7551ef0 (First Commit)
               />
             </div>
           ))}
