@@ -12,12 +12,20 @@
   "dependencies": {
     "@headlessui/react": "^2.2.7",
     "@heroicons/react": "^2.2.0",
+<<<<<<< HEAD
+=======
+    "@tailwindcss/line-clamp": "^0.4.4",
+>>>>>>> 7551ef0 (First Commit)
     "@tailwindcss/vite": "^4.1.13",
     "framer-motion": "^12.23.12",
     "gsap": "^3.13.0",
     "lucide-react": "^0.542.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+<<<<<<< HEAD
+=======
+    "react-icons": "^5.5.0",
+>>>>>>> 7551ef0 (First Commit)
     "three": "^0.180.0"
   },
   "devDependencies": {
