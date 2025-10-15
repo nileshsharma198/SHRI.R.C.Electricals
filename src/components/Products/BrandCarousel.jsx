@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import BioCon from "../../assets/Brands/Biocon.jpg";
-import LNT from "../../assets/Brands/L&T.jpg";
+import LNT from "../../assets/Brands/LNT.jpg";
 import Schneider from "../../assets/Brands/Schneider.jpg";
 import Selec from "../../assets/Brands/Selec.jpg";
 import Shree from "../../assets/Brands/Shree.jpg";
