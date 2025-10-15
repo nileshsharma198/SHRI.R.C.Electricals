@@ -14,8 +14,6 @@ export default function App() {
       <Header />
       <Home/>
       <BrandCarousel/>
-      <Reviews/>
-      <Contact/>
       <ProductsSection/>
       <Reviews/>
       <Contact/>

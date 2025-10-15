@@ -1,15 +1,6 @@
-<<<<<<< HEAD
-import React from "react";
 
-function Button({ text }) {
-  return (
-    <button className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-2 py-2 rounded-lg shadow-md transition duration-200">
-=======
-// import React from "react";
+/* Removed duplicate Button component and export */
 
-// function Button({ text }) {
-//   return (
-//     <button className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-2 py-2 rounded-lg shadow-md transition duration-200">
 //       {/* Chat Icon */}
 //       <svg
 //         xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +40,7 @@ function Button({ text, productName }) {
       onClick={handleClick}
       className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-2 py-2 rounded-lg shadow-md transition duration-200"
     >
->>>>>>> 7551ef0 (First Commit)
+
       {/* Chat Icon */}
       <svg
         xmlns="http://www.w3.org/2000/svg"

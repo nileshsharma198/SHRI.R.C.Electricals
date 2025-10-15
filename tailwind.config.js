@@ -1,17 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-<<<<<<< HEAD
-export default  {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}"
-  ],
-  darkMode: 'class', // enables dark/light mode using a 'dark' class on <html> or <body>
-  theme: {
-    extend: {
-      colors: {
-        primary: '#1D4ED8',   // example blue
-        foreground: '#111827', // text color
-=======
 export default {
   content: [
     "./index.html",
@@ -21,8 +8,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#1D4ED8',
-        foreground: '#111827',
+        primary: '#1D4ED8',   // example blue
+        foreground: '#111827', // text color
       },
       keyframes: {
         scalePulse: {
@@ -32,13 +19,8 @@ export default {
       },
       animation: {
         scalePulse: 'scalePulse 1.5s ease-in-out infinite',
->>>>>>> 7551ef0 (First Commit)
       },
     },
   },
   plugins: [],
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 7551ef0 (First Commit)
