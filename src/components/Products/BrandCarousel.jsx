@@ -1,16 +1,16 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import BioCon from "../../assets/brands/BioCon.jpg";
-import LNT from "../../assets/brands/L&T.jpg";
-import Schneider from "../../assets/brands/Schneider.jpg";
-import Selec from "../../assets/brands/Selec.jpg";
-import Shree from "../../assets/brands/Shree.jpg";
-import SSG from "../../assets/brands/SSG.jpg";
-import Taparia from "../../assets/brands/Taparia.jpg";
-import Techson from "../../assets/brands/Techson.jpg";
+import BioCon from "../../assets/Brands/Biocon.jpg";
+import LNT from "../../assets/Brands/L&T.jpg";
+import Schneider from "../../assets/Brands/Schneider.jpg";
+import Selec from "../../assets/Brands/Selec.jpg";
+import Shree from "../../assets/Brands/Shree.jpg";
+import SSG from "../../assets/Brands/SSG.jpg";
+import Taparia from "../../assets/Brands/Taparia.jpg";
+import Techson from "../../assets/Brands/Techson.jpg";
 
 const logos = [
-  { src: BioCon, alt: "BioCon" },
+  { src: BioCon, alt: "Biocon" },
   { src: LNT, alt: "L&T" },
   { src: Schneider, alt: "Schneider" },
   { src: Selec, alt: "Selec" },
