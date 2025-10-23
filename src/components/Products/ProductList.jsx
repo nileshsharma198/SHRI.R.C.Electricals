@@ -1,50 +1,13 @@
-// // src/components/Products/ProductList.jsx
-// import React from "react";
-// import ProductCard from "./ProductCard";
-
-// // Static image imports
-// import mainSwitchImg from "../../assets/Products/mainswitch.jpg";
-// import industrialPanelImg from "../../assets/Products/industrialpanel.jpg";
-// import circuitBreakerImg from "../../assets/Products/circuitbreaker.jpg";
-// import capacitorImg from "../../assets/Products/capacitor.jpg";
-// import cableRollImg from "../../assets/Products/cableroll.jpg";
-
-// const products = [
-//   { id: 1, title: "Main Switch", image: mainSwitchImg },
-//   { id: 2, title: "Industrial Panel", image: industrialPanelImg },
-//   { id: 3, title: "Circuit Breaker", image: circuitBreakerImg },
-//   { id: 4, title: "Capacitor", image: capacitorImg },
-//   { id: 5, title: "Cable Roll", image: cableRollImg },
-// ];
-
-// function ProductList() {
-//   return (
-//     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-//       {products.map((product) => (
-//         <ProductCard key={product.id} product={product} />
-//       ))}
-//     </div>
-//   );
-// }
-
-// export default ProductList;
-
 import React from "react";
 import ProductCard from "./ProductCard";
 
-// Static image imports
-import mainSwitchImg from "../../../public/assets/Products/mainswitch.jpg";
-import industrialPanelImg from "../../../public/assets/Products/industrialpanel.jpg";
-import circuitBreakerImg from "../../../public/assets/Products/circuitbreaker.jpg";
-import capacitorImg from "../../../public/assets/Products/capacitor.jpg";
-import cableRollImg from "../../../public/assets/Products/cableroll.jpg";
-
+// Products array using public paths
 const products = [
-  { id: 1, title: "Main Switch", image: mainSwitchImg },
-  { id: 2, title: "Industrial Panel", image: industrialPanelImg },
-  { id: 3, title: "Circuit Breaker", image: circuitBreakerImg },
-  { id: 4, title: "Capacitor", image: capacitorImg },
-  { id: 5, title: "Cable Roll", image: cableRollImg },
+  { id: 1, title: "Main Switch", image: "/assets/Products/mainswitch.jpg" },
+  { id: 2, title: "Industrial Panel", image: "/assets/Products/industrialpanel.jpg" },
+  { id: 3, title: "Circuit Breaker", image: "/assets/Products/circuitbreaker.jpg" },
+  { id: 4, title: "Capacitor", image: "/assets/Products/capacitor.jpg" },
+  { id: 5, title: "Cable Roll", image: "/assets/Products/cableroll.jpg" },
 ];
 
 function ProductList() {
