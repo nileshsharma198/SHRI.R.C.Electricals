@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react'
 import Button from '../Common/Button'
 
 const heroImages = [
-  "../src/assets/Homehero/Home1.jpg",
-  "../src/assets/Homehero/Home2.jpg",
-  "../src/assets/Homehero/Home3.jpg",
-  "../src/assets/Homehero/Home4.jpg",
+  "../../../public/assets/Homehero/Home1.jpg",
+  "../../../public/assets/Homehero/Home2.jpg",
+  "../../../public/assets/Homehero/Home3.jpg",
+  "../../../public/assets/Homehero/Home4.jpg",
 ];
 
 function Home() {

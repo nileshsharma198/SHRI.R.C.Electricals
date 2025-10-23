@@ -33,11 +33,11 @@ import React from "react";
 import ProductCard from "./ProductCard";
 
 // Static image imports
-import mainSwitchImg from "../../assets/Products/mainswitch.jpg";
-import industrialPanelImg from "../../assets/Products/industrialpanel.jpg";
-import circuitBreakerImg from "../../assets/Products/circuitbreaker.jpg";
-import capacitorImg from "../../assets/Products/capacitor.jpg";
-import cableRollImg from "../../assets/Products/cableroll.jpg";
+import mainSwitchImg from "../../../public/assets/Products/mainswitch.jpg";
+import industrialPanelImg from "../../../public/assets/Products/industrialpanel.jpg";
+import circuitBreakerImg from "../../../public/assets/Products/circuitbreaker.jpg";
+import capacitorImg from "../../../public/assets/Products/capacitor.jpg";
+import cableRollImg from "../../../public/assets/Products/cableroll.jpg";
 
 const products = [
   { id: 1, title: "Main Switch", image: mainSwitchImg },
