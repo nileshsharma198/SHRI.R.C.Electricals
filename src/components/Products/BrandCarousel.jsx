@@ -1,23 +1,16 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import BioCon from "../../../public/assets/Brands/BioCon.jpg";
-import LNT from "../../../public/assets/Brands/LNT.jpg";
-import Schneider from "../../../public/assets/Brands/Schneider.jpg";
-import Selec from "../../../public/assets/Brands/Selec.jpg";
-import Shree from "../../../public/assets/Brands/Shree.jpg";
-import SSG from "../../../public/assets/Brands/SSG.jpg";
-import Taparia from "../../../public/assets/Brands/Taparia.jpg";
-import Techson from "../../../public/assets/Brands/Techson.jpg";
 
+// ✅ Remove all import statements for public images
 const logos = [
-  { src: BioCon, alt: "Biocon" },
-  { src: LNT, alt: "L&T" },
-  { src: Schneider, alt: "Schneider" },
-  { src: Selec, alt: "Selec" },
-  { src: Shree, alt: "Shree" },
-  { src: SSG, alt: "SSG" },
-  { src: Taparia, alt: "Taparia" },
-  { src: Techson, alt: "Techson" },
+  { src: "/assets/Brands/BioCon.jpg", alt: "Biocon" },
+  { src: "/assets/Brands/LNT.jpg", alt: "L&T" },
+  { src: "/assets/Brands/Schneider.jpg", alt: "Schneider" },
+  { src: "/assets/Brands/Selec.jpg", alt: "Selec" },
+  { src: "/assets/Brands/Shree.jpg", alt: "Shree" },
+  { src: "/assets/Brands/SSG.jpg", alt: "SSG" },
+  { src: "/assets/Brands/Taparia.jpg", alt: "Taparia" },
+  { src: "/assets/Brands/Techson.jpg", alt: "Techson" },
 ];
 
 function BrandCarousel() {
@@ -29,19 +22,18 @@ function BrandCarousel() {
     const totalWidth = track.scrollWidth / 2; // half because duplicated
 
     tweenRef.current = gsap.to(track, {
-      x: `-=${totalWidth}`, // move left by one set width
+      x: `-=${totalWidth}`,
       duration: 25,
       ease: "linear",
       repeat: -1,
       modifiers: {
-        x: gsap.utils.unitize(x => parseFloat(x) % totalWidth), // loop seamlessly
+        x: gsap.utils.unitize(x => parseFloat(x) % totalWidth),
       },
     });
 
     return () => tweenRef.current?.kill();
   }, []);
 
-  // Pause only when hovering a logo card
   const handleMouseEnter = () => tweenRef.current?.pause();
   const handleMouseLeave = () => tweenRef.current?.resume();
 
@@ -57,10 +49,7 @@ function BrandCarousel() {
 
       {/* Carousel */}
       <div className="relative mt-10 w-full overflow-hidden">
-        <div
-          ref={trackRef}
-          className="flex gap-12 w-max"
-        >
+        <div ref={trackRef} className="flex gap-12 w-max">
           {[...logos, ...logos].map((logo, i) => (
             <div
               key={i}
@@ -69,7 +58,7 @@ function BrandCarousel() {
               onMouseLeave={handleMouseLeave}
             >
               <img
-                src={logo.src}
+                src={logo.src} // ✅ using public path
                 alt={logo.alt}
                 className="h-40 w-auto object-contain rounded-lg"
               />
